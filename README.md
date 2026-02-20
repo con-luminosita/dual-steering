@@ -1,5 +1,5 @@
 # Dual-Steering
-This repository contains the official implementation of Dual Steering, the practical application proposed in our paper.
+This repository contains the official implementation of Dual Steering, the practical application proposed in [our paper](https://www.arxiv.org/abs/2602.15293).
 
 This codebase implements Euclidean and Dual steering for the following models: Gemma-3-4B (LLM representations) and MetaCLIP-2 (Vision-Language representations). It also includes the code for computing the metrics reported in the paper to validate the method's effectiveness.
 
