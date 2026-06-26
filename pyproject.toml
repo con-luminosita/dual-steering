@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dual-steering"
+version = "0.1.0"
+description = "Official implementation of Dual Steering (Euclidean and Dual steering for LLM and Vision-Language representations)."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "numpy",
+    "pandas",
+    "transformers",
+    "tqdm",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+experiments = [
+    "datasets",
+    "matplotlib",
+    "jupyter",
+]
+
+[project.urls]
+Paper = "https://www.arxiv.org/abs/2602.15293"
+
+[tool.setuptools]
+packages = [
+    "information_geometry",
+    "information_geometry.core",
+    "information_geometry.directions",
+    "information_geometry.steering",
+]
